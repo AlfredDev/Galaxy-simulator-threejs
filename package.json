@@ -1,4 +1,5 @@
 {
+  "homepage": "https://AlfredDev.github.io/Galaxy-simulator-threejs",
   "name": "galaxy-simulator",
   "private": true,
   "version": "0.0.0",
@@ -6,9 +7,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^4.4.5"
   },
   "dependencies": {
